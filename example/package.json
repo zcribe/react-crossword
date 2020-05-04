@@ -9,13 +9,16 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "3.4.1",
-    "styled-components": "file:../node_modules/styled-components"
+    "styled-components": "file:../node_modules/styled-components",
+    "snyk": "^1.317.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +34,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "snyk": true
 }
